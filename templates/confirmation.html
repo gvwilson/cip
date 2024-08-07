@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block head %}
+  <meta http-equiv="Refresh" content="5; url='/'" />
+{% endblock %}
+{% block content %}
+  <p>
+    Thank you for confirming your signature, {{fullname}}.
+    You will be redirected to the list of signers in a few seconds.
+  </p>
+  {% include "image.inc" %}
+{% endblock %}

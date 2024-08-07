@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block head %}
+  <script src="/static/cip.js"></script>
+{% endblock %}
+{% block content %}
+  <div class="row">
+    <div class="col">
+      {% include "pledge_text.inc" %}
+    </div>
+    <div class="col">
+      {% include "image.inc" %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      {% include "display_signers.inc" %}
+    </div>
+    <div class="col" align="center">
+      {% include "signup_form.inc" %}
+    </div>
+  </div>
+{% endblock %}

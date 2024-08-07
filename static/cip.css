@@ -1,0 +1,78 @@
+:root {
+    --borderwidth: 1px;
+    --faint: #F0F0F0;
+    --font: Helvetica;
+    --highlight: #D0D0D0;
+    --padding: 5px;
+    --page-width: 72rem;
+    --page-padding: 0.5rem;
+}
+
+body {
+    max-width: var(--page-width);
+    padding-left: var(--page-padding);
+    font-family: var(--font);
+}
+
+th {
+    text-align: left;
+}
+
+table.signers {
+    width: 100%;
+}
+
+table.signers tr:nth-child(even) {
+    background-color: var(--faint);
+}
+
+div.error {
+    text-align: center;
+}
+
+p.error {
+    border: solid var(--borderwidth) var(--highlight);
+}
+
+div.row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: var(--page-padding);
+}
+
+div.column {
+    padding: var(--padding);
+}
+
+/* ---------------------------------------- */
+
+/* Style the tab */
+.tabcontrols {
+    overflow: hidden;
+    border: solid var(--borderwidth) var(--highlight);
+    background-color: var(--faint);
+}
+
+/* Style the buttons that are used to open the tab content */
+.tabcontrols button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: var(--padding);
+    font-size: 100%;
+}
+
+/* Create an active/current tablink class */
+.tabcontrols button.active {
+    background-color: var(--highlight);
+}
+
+/* Style the tab content */
+.pledge {
+    display: none;
+    padding: var(--padding);
+    border: solid var(--borderwidth) var(--highlight);
+    border-top: none;
+}
